@@ -53,7 +53,7 @@ class SetupConfiguration(BaseModel):
     # Image paths
     custom_img_path: str
     custom_img_json_path: str
-    
+    use_smb: bool = False
     # Preferences
     ui_language: str = "en"
     default_language: str = "de-de"
