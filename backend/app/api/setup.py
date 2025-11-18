@@ -231,19 +231,6 @@ async def save_configuration(config: SetupConfiguration):
                 "api_base": "/api",
                 "timeout": 30
             },
-            "smb": {
-                "enabled": config.use_smb,
-                "host": config.smb_host or "",
-                "share": config.smb_share or "",
-                "base_path": config.smb_base_path or "",
-                "username": config.smb_username or "",
-                "password": config.smb_password or "",
-                "folders": {
-                    "library": "/library",
-                    "config": "/config",
-                    "custom_img": "/www/custom_img"
-                }
-            },
             "volumes": {
                 "enabled": not config.use_smb,
                 "config_path": "/data/config",
